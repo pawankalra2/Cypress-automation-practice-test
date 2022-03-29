@@ -1,0 +1,189 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 5,
+    "passes": 3,
+    "pending": 0,
+    "failures": 2,
+    "start": "2022-03-29T15:23:46.275Z",
+    "end": "2022-03-29T15:24:52.224Z",
+    "duration": 65949,
+    "testsRegistered": 5,
+    "passPercent": 60,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "0da3b692-45b7-40fd-b068-dc58fd65a3b4",
+      "title": "",
+      "fullFile": "cypress/integration/TC002_sorting.feature",
+      "file": "cypress/integration/TC002_sorting.feature",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "e696941b-1103-41f3-a1e4-7448064081bc",
+          "title": "Test Sort Funtionality on website.",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "User sorts by \"Price: Lowest first\" and validate results",
+              "fullTitle": "Test Sort Funtionality on website. User sorts by \"Price: Lowest first\" and validate results",
+              "timedOut": null,
+              "duration": 17315,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {},
+              "uuid": "774c18a8-bda5-4efc-9941-ca86cf6bd9f6",
+              "parentUUID": "e696941b-1103-41f3-a1e4-7448064081bc",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "User sorts by \"Price: Highest first\" and validate results",
+              "fullTitle": "Test Sort Funtionality on website. User sorts by \"Price: Highest first\" and validate results",
+              "timedOut": null,
+              "duration": 18021,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {
+                "message": "AssertionError: expected [ Array(7) ] to be sorted in descending order",
+                "estack": "AssertionError: expected [ Array(7) ] to be sorted in descending order\n    at Proxy.chaiIsSorted (http://automationpractice.com/__cypress/tests?p=cypress/support/index.js:76:8)\n    at Proxy.eval (http://automationpractice.com/__cypress/tests?p=cypress/support/index.js:85:18)\n    at Context.eval (http://automationpractice.com/__cypress/tests?p=cypress/integration/TC002_sorting.feature:89:33)",
+                "diff": null
+              },
+              "uuid": "acea143b-b3a8-4bc2-ab2a-e8182f38c861",
+              "parentUUID": "e696941b-1103-41f3-a1e4-7448064081bc",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "User sorts by \"Product Name: A to Z\" and validate results",
+              "fullTitle": "Test Sort Funtionality on website. User sorts by \"Product Name: A to Z\" and validate results",
+              "timedOut": null,
+              "duration": 9647,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {},
+              "uuid": "185faa68-26a5-431c-8b55-68b7dce5cde9",
+              "parentUUID": "e696941b-1103-41f3-a1e4-7448064081bc",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "User sorts by \"Product Name: Z to A\" and validate results",
+              "fullTitle": "Test Sort Funtionality on website. User sorts by \"Product Name: Z to A\" and validate results",
+              "timedOut": null,
+              "duration": 10189,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {
+                "message": "AssertionError: expected [ Array(7) ] to deeply equal [ Array(7) ]",
+                "estack": "AssertionError: expected [ Array(7) ] to deeply equal [ Array(7) ]\n    at Context.eval (http://automationpractice.com/__cypress/tests?p=cypress/integration/TC002_sorting.feature:116:26)",
+                "diff": "- [ 'Blouse',\n-   'Faded Short Sleeve T-shirts',\n-   'Printed Chiffon Dress',\n+ [ 'Printed Summer Dress',\n+   'Printed Summer Dress',\n   'Printed Dress',\n   'Printed Dress',\n-   'Printed Summer Dress',\n-   'Printed Summer Dress' ]\n+   'Printed Chiffon Dress',\n+   'Faded Short Sleeve T-shirts',\n+   'Blouse' ]\n"
+              },
+              "uuid": "fe13d99f-7d64-47b9-9d84-a6e0146f210f",
+              "parentUUID": "e696941b-1103-41f3-a1e4-7448064081bc",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "User sorts by \"In stock\" and validate results",
+              "fullTitle": "Test Sort Funtionality on website. User sorts by \"In stock\" and validate results",
+              "timedOut": null,
+              "duration": 10275,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {},
+              "uuid": "7892e759-89a6-44d2-b78b-225d8a6bd858",
+              "parentUUID": "e696941b-1103-41f3-a1e4-7448064081bc",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "774c18a8-bda5-4efc-9941-ca86cf6bd9f6",
+            "185faa68-26a5-431c-8b55-68b7dce5cde9",
+            "7892e759-89a6-44d2-b78b-225d8a6bd858"
+          ],
+          "failures": [
+            "acea143b-b3a8-4bc2-ab2a-e8182f38c861",
+            "fe13d99f-7d64-47b9-9d84-a6e0146f210f"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 65447,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

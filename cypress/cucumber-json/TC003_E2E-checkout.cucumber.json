@@ -1,0 +1,217 @@
+[
+  {
+    "description": "    I want to log into my account\n    I want to select product\n    I want to add to cart\n    I want to make payment\n    I want to complete payment",
+    "keyword": "Feature",
+    "name": "Automate End to End Buy Order and Checkout functionality.",
+    "line": 1,
+    "id": "automate-end-to-end-buy-order-and-checkout-functionality.",
+    "tags": [],
+    "uri": "TC003_E2E-checkout.feature",
+    "elements": [
+      {
+        "id": "automate-end-to-end-buy-order-and-checkout-functionality.;login-to-automation-practice-site",
+        "keyword": "Scenario",
+        "line": 11,
+        "name": "Login to Automation Practice site",
+        "tags": [
+          {
+            "name": "@checkout",
+            "line": 10
+          },
+          {
+            "name": "@e2e",
+            "line": 10
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 12,
+            "name": "the user open the login page",
+            "result": {
+              "status": "passed",
+              "duration": 13361000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 13,
+            "name": "the user type in username password",
+            "result": {
+              "status": "passed",
+              "duration": 1250000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 14,
+            "name": "the user clicks on Sign in button",
+            "result": {
+              "status": "passed",
+              "duration": 4054000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 15,
+            "name": "\"Pawan Kalra\" should be shown",
+            "result": {
+              "status": "passed",
+              "duration": 57000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "automate-end-to-end-buy-order-and-checkout-functionality.;user-selects-a-product",
+        "keyword": "Scenario",
+        "line": 26,
+        "name": "User selects a product",
+        "tags": [
+          {
+            "name": "@checkout",
+            "line": 16
+          },
+          {
+            "name": "@e2e",
+            "line": 16
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 18,
+            "name": "User is on product page",
+            "result": {
+              "status": "passed",
+              "duration": 20093000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 19,
+            "name": "the user selects quantity \"2\"",
+            "result": {
+              "status": "passed",
+              "duration": 647000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 20,
+            "name": "the user selects size \"M\"",
+            "result": {
+              "status": "passed",
+              "duration": 490000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 21,
+            "name": "the user selects color \"blue\"",
+            "result": {
+              "status": "passed",
+              "duration": 423000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 22,
+            "name": "the user add to cart",
+            "result": {
+              "status": "passed",
+              "duration": 4419000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 23,
+            "name": "the user should see selected item \"Faded Short Sleeve T-shirts\"",
+            "result": {
+              "status": "passed",
+              "duration": 2297000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "automate-end-to-end-buy-order-and-checkout-functionality.;checkout-with-payment",
+        "keyword": "Scenario",
+        "line": 28,
+        "name": "Checkout with payment",
+        "tags": [
+          {
+            "name": "@checkout",
+            "line": 27
+          },
+          {
+            "name": "@e2e",
+            "line": 27
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "name",
+                      "address"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Pawan Kalra",
+                      "United States"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "Given ",
+            "line": 29,
+            "name": "the user sets delivery details",
+            "result": {
+              "status": "passed",
+              "duration": 18183000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 32,
+            "name": "the user make a payment",
+            "result": {
+              "status": "passed",
+              "duration": 14426000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 33,
+            "name": "the user should complete order and see confirmation page",
+            "result": {
+              "status": "passed",
+              "duration": 99000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

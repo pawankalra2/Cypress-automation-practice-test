@@ -1,0 +1,142 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 3,
+    "passes": 3,
+    "pending": 0,
+    "failures": 0,
+    "start": "2022-03-29T15:25:23.958Z",
+    "end": "2022-03-29T15:26:43.748Z",
+    "duration": 79790,
+    "testsRegistered": 3,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "08c52d69-9595-4d38-96c1-01882969f5d9",
+      "title": "",
+      "fullFile": "cypress/integration/TC003_E2E-checkout.feature",
+      "file": "cypress/integration/TC003_E2E-checkout.feature",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "590f4ac0-e4fd-4b8e-80dd-355d6d480e4b",
+          "title": "Automate End to End Buy Order and Checkout functionality.",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Login to Automation Practice site",
+              "fullTitle": "Automate End to End Buy Order and Checkout functionality. Login to Automation Practice site",
+              "timedOut": null,
+              "duration": 18443,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {},
+              "uuid": "29ef11c5-e2a7-47c5-8c0c-9d2288c4b3bb",
+              "parentUUID": "590f4ac0-e4fd-4b8e-80dd-355d6d480e4b",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "User selects a product (example #1)",
+              "fullTitle": "Automate End to End Buy Order and Checkout functionality. User selects a product (example #1)",
+              "timedOut": null,
+              "duration": 28326,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {},
+              "uuid": "bdbfdf6d-e5a6-4e39-89fd-6bc84e8777ea",
+              "parentUUID": "590f4ac0-e4fd-4b8e-80dd-355d6d480e4b",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Checkout with payment",
+              "fullTitle": "Automate End to End Buy Order and Checkout functionality. Checkout with payment",
+              "timedOut": null,
+              "duration": 32579,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {},
+              "uuid": "5292dcf9-8629-4a2d-a61d-54a1d4d94f86",
+              "parentUUID": "590f4ac0-e4fd-4b8e-80dd-355d6d480e4b",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "29ef11c5-e2a7-47c5-8c0c-9d2288c4b3bb",
+            "bdbfdf6d-e5a6-4e39-89fd-6bc84e8777ea",
+            "5292dcf9-8629-4a2d-a61d-54a1d4d94f86"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 79348,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

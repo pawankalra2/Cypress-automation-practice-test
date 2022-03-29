@@ -1,0 +1,14 @@
+{
+  "testFiles": "**/*.feature",
+  "baseUrl": "http://automationpractice.com",
+  "reporter": "mochawesome",
+  "screenshotOnRunFailure":true,
+  "viewportWidth":1024,
+  "viewportHeight":720,
+  "video":true,
+  "reporterOptions": {
+    "overwrite": false,
+    "html": false,
+    "json": true
+  }
+}

@@ -1,0 +1,142 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 3,
+    "passes": 3,
+    "pending": 0,
+    "failures": 0,
+    "start": "2022-03-29T15:22:35.012Z",
+    "end": "2022-03-29T15:23:22.292Z",
+    "duration": 47280,
+    "testsRegistered": 3,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "861f13bf-5949-4ee5-91ef-0c56a6fb79b8",
+      "title": "",
+      "fullFile": "cypress/integration/TC001_floatMenu.feature",
+      "file": "cypress/integration/TC001_floatMenu.feature",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "9216a790-30c2-4aed-a461-f5b24e6fff21",
+          "title": "Test Float Menu interaction on website.",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "User hower over \"WOMEN\" Float menu and validate all fields",
+              "fullTitle": "Test Float Menu interaction on website. User hower over \"WOMEN\" Float menu and validate all fields",
+              "timedOut": null,
+              "duration": 25141,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {},
+              "uuid": "e9ce0ccf-405a-48fd-b0f6-1dcf8765ef34",
+              "parentUUID": "9216a790-30c2-4aed-a461-f5b24e6fff21",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "User hower over \"DRESSES\" Float menu and validate all fields",
+              "fullTitle": "Test Float Menu interaction on website. User hower over \"DRESSES\" Float menu and validate all fields",
+              "timedOut": null,
+              "duration": 13605,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {},
+              "uuid": "7a95a611-da3d-4210-b2fb-bb0feeb12ca2",
+              "parentUUID": "9216a790-30c2-4aed-a461-f5b24e6fff21",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "User hower over \"T-SHIRTS\" Float menu and click",
+              "fullTitle": "Test Float Menu interaction on website. User hower over \"T-SHIRTS\" Float menu and click",
+              "timedOut": null,
+              "duration": 8250,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {},
+              "uuid": "c242798a-d5a8-499b-9428-97f743eea62f",
+              "parentUUID": "9216a790-30c2-4aed-a461-f5b24e6fff21",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "e9ce0ccf-405a-48fd-b0f6-1dcf8765ef34",
+            "7a95a611-da3d-4210-b2fb-bb0feeb12ca2",
+            "c242798a-d5a8-499b-9428-97f743eea62f"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 46996,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

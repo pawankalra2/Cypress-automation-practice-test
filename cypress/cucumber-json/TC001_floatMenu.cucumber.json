@@ -1,0 +1,148 @@
+[
+  {
+    "description": "  I want to log into my account\n  I want to click on Float Menu WOMEN and validate all options\n  I want to click on Float Menu DRESSES and validate all options\n  I want to click on Float Menu T-SHIRTS and validate all options",
+    "keyword": "Feature",
+    "name": "Test Float Menu interaction on website.",
+    "line": 1,
+    "id": "test-float-menu-interaction-on-website.",
+    "tags": [],
+    "uri": "TC001_floatMenu.feature",
+    "elements": [
+      {
+        "id": "test-float-menu-interaction-on-website.;user-hower-over-\"women\"-float-menu-and-validate-all-fields",
+        "keyword": "Scenario",
+        "line": 10,
+        "name": "User hower over \"WOMEN\" Float menu and validate all fields",
+        "tags": [
+          {
+            "name": "@floatMenu",
+            "line": 9
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 11,
+            "name": "User is on product page and hover on \"Women\" button",
+            "result": {
+              "status": "passed",
+              "duration": 17558000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 12,
+            "name": "User validates submenu under WOMEN is \"TOPS\" and \"DRESSES\"",
+            "result": {
+              "status": "passed",
+              "duration": 69000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 13,
+            "name": "User verify all options under TOPS is \"T-SHIRTS\" and \"BLOUSES\"",
+            "result": {
+              "status": "passed",
+              "duration": 48000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 14,
+            "name": "User verify all options under DRESSES is \"CASUAL DRESSES\" and \"EVENING DRESSES\" and \"SUMMER DRESSES\"",
+            "result": {
+              "status": "passed",
+              "duration": 46000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 15,
+            "name": "User clicks on \"Tops\" and should see all \"TOPS\"",
+            "result": {
+              "status": "passed",
+              "duration": 7491000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "test-float-menu-interaction-on-website.;user-hower-over-\"dresses\"-float-menu-and-validate-all-fields",
+        "keyword": "Scenario",
+        "line": 17,
+        "name": "User hower over \"DRESSES\" Float menu and validate all fields",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 18,
+            "name": "User is on product page and hover on \"Dresses\" button",
+            "result": {
+              "status": "passed",
+              "duration": 9468000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 19,
+            "name": "User verify all options under DRESSES",
+            "result": {
+              "status": "passed",
+              "duration": 88000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 20,
+            "name": "User clicks on \"Casual Dresses\" and should see all \"Casual Dresses\"",
+            "result": {
+              "status": "passed",
+              "duration": 4117000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "test-float-menu-interaction-on-website.;user-hower-over-\"t-shirts\"-float-menu-and-click",
+        "keyword": "Scenario",
+        "line": 22,
+        "name": "User hower over \"T-SHIRTS\" Float menu and click",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 23,
+            "name": "User is on product page and hover on \"T-shirts\" button",
+            "result": {
+              "status": "passed",
+              "duration": 5200000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 24,
+            "name": "User clicks on \"T-shirts\" and should see all \"T-shirts\"",
+            "result": {
+              "status": "passed",
+              "duration": 3142000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

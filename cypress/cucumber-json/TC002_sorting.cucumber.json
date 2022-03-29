@@ -1,0 +1,218 @@
+[
+  {
+    "description": "    I want to click on Women Menu\n    I want to test various sorting options",
+    "keyword": "Feature",
+    "name": "Test Sort Funtionality on website.",
+    "line": 1,
+    "id": "test-sort-funtionality-on-website.",
+    "tags": [],
+    "uri": "TC002_sorting.feature",
+    "elements": [
+      {
+        "id": "test-sort-funtionality-on-website.;user-sorts-by-\"price:-lowest-first\"-and-validate-results",
+        "keyword": "Scenario",
+        "line": 7,
+        "name": "User sorts by \"Price: Lowest first\" and validate results",
+        "tags": [
+          {
+            "name": "@sorting",
+            "line": 6
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 8,
+            "name": "User clicks on \"Women\" and should see all \"Women\" clothes",
+            "result": {
+              "status": "passed",
+              "duration": 14814000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 9,
+            "name": "User clicks on product Sorting drop down and select \"Price: Lowest first\"",
+            "result": {
+              "status": "passed",
+              "duration": 2536000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 10,
+            "name": "User checks products are sorted by lowest price first",
+            "result": {
+              "status": "passed",
+              "duration": 134000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "test-sort-funtionality-on-website.;user-sorts-by-\"price:-highest-first\"-and-validate-results",
+        "keyword": "Scenario",
+        "line": 12,
+        "name": "User sorts by \"Price: Highest first\" and validate results",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 13,
+            "name": "User clicks on \"Women\" and should see all \"Women\" clothes",
+            "result": {
+              "status": "passed",
+              "duration": 13055000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 14,
+            "name": "User clicks on product Sorting drop down and select \"Price: Highest first\"",
+            "result": {
+              "status": "passed",
+              "duration": 4338000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 15,
+            "name": "User checks products are sorted by highest price first",
+            "result": {
+              "status": "failed",
+              "error_message": "AssertionError: expected [ Array(7) ] to be sorted in descending order\n    at Proxy.chaiIsSorted (http://automationpractice.com/__cypress/tests?p=cypress/support/index.js:76:8)\n    at Proxy.eval (http://automationpractice.com/__cypress/tests?p=cypress/support/index.js:85:18)\n    at Context.eval (http://automationpractice.com/__cypress/tests?p=cypress/integration/TC002_sorting.feature:89:33)"
+            }
+          }
+        ]
+      },
+      {
+        "id": "test-sort-funtionality-on-website.;user-sorts-by-\"product-name:-a-to-z\"-and-validate-results",
+        "keyword": "Scenario",
+        "line": 17,
+        "name": "User sorts by \"Product Name: A to Z\" and validate results",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 18,
+            "name": "User clicks on \"Women\" and should see all \"Women\" clothes",
+            "result": {
+              "status": "passed",
+              "duration": 6846000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 19,
+            "name": "User clicks on product Sorting drop down and select \"Product Name: A to Z\"",
+            "result": {
+              "status": "passed",
+              "duration": 2791000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 20,
+            "name": "User checks products are sorted by name A to Z",
+            "result": {
+              "status": "passed",
+              "duration": 110000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "test-sort-funtionality-on-website.;user-sorts-by-\"product-name:-z-to-a\"-and-validate-results",
+        "keyword": "Scenario",
+        "line": 22,
+        "name": "User sorts by \"Product Name: Z to A\" and validate results",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 23,
+            "name": "User clicks on \"Women\" and should see all \"Women\" clothes",
+            "result": {
+              "status": "passed",
+              "duration": 7704000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 24,
+            "name": "User clicks on product Sorting drop down and select \"Product Name: Z to A\"",
+            "result": {
+              "status": "passed",
+              "duration": 2010000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 25,
+            "name": "User checks products are sorted by name Z to A",
+            "result": {
+              "status": "failed",
+              "error_message": "AssertionError\n    + expected - actual\n\n    -[ 'Blouse',\n    -  'Faded Short Sleeve T-shirts',\n    -  'Printed Chiffon Dress',\n    +[ 'Printed Summer Dress',\n    +  'Printed Summer Dress',\n       'Printed Dress',\n       'Printed Dress',\n    -  'Printed Summer Dress',\n    -  'Printed Summer Dress' ]\n    +  'Printed Chiffon Dress',\n    +  'Faded Short Sleeve T-shirts',\n    +  'Blouse' ]\n\n    at Context.eval (http://automationpractice.com/__cypress/tests?p=cypress/integration/TC002_sorting.feature:116:26)"
+            }
+          }
+        ]
+      },
+      {
+        "id": "test-sort-funtionality-on-website.;user-sorts-by-\"in-stock\"-and-validate-results",
+        "keyword": "Scenario",
+        "line": 27,
+        "name": "User sorts by \"In stock\" and validate results",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 28,
+            "name": "User clicks on \"Dresses\" and should see all \"Dresses\" clothes",
+            "result": {
+              "status": "passed",
+              "duration": 8419000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 29,
+            "name": "User clicks on product Sorting drop down and select \"In stock\"",
+            "result": {
+              "status": "passed",
+              "duration": 1834000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 30,
+            "name": "User checks only In stock product are displayed",
+            "result": {
+              "status": "passed",
+              "duration": 50000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
