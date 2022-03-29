@@ -2,7 +2,7 @@
 
 ## Run Locally on Linux
 Prerequisite :node and npm should be installed
-- git clone/unzip the folder
+- git clone https://github.com/pawankalra2/Cypress-automation-practice-test.git or unzip the attached folder.
 - npm install -g cypress
 - cd Cypress-automation-practice-site
 - npm install
