@@ -1,4 +1,4 @@
-<h1 align="center">Auotomation Practice site tests using Cypress and cucumber </h1>
+<h1 align="center">Automation Practice site tests using Cypress and cucumber </h1>
 
 ## Run Locally on Linux
 Prerequisite :node and npm should be installed
