@@ -6,6 +6,10 @@ pipeline {
       image 'cypress/base:10'
     }
   }
+       environment {
+        CHROME_BIN = '/bin/google-chrome'
+    }
+
 
     stages {
         stage('Install Dependencies') {
